@@ -15,14 +15,19 @@ const HeroBanner = () => {
         Knowledge is a seed that grows when you read.
         </p>
         <CustomButton
-         title={'hit me up'}
-         containerStyles="bg-amber-500 py-2 px-3 text-white rounded-full mt-10"
+         title={'Explore Cars'}
+         containerStyles="bg-blue-500 mt-10 text-white rounded-full mt-10"
          handleClick={handleScroll}
           />
       </div>
       <div className='hero__image-container'>
         <div className="hero__image">
-          <Image />
+          <Image
+           src="/hero.png"
+           alt="hero banner"
+           fill className="object-contain"
+           />
+           <div className="hero__image-overlay" />
         </div>
       </div>
     </div>

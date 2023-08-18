@@ -4,12 +4,12 @@
 import { FC } from "react"
 import { CustomButtonProps } from "./types"
 
-const CustomButton = ({ title,containerStyles,handleClick } : CustomButtonProps) => {
+const CustomButton = ({ title, btnType="button", containerStyles,handleClick } : CustomButtonProps) => {
   return (
     <button
     disabled={false}
-    type="button"
-    className={`custom-button ${containerStyles}`}
+    type={btnType}
+    className={`custom-btn ${containerStyles}`}
     onClick={handleClick}
     >
         <span className={`flex-1`}>
